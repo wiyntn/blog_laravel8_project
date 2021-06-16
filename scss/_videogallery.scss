@@ -1,0 +1,71 @@
+
+.section-videoGallery{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .videogallery-container{
+        
+        .section-header-videogallery{
+            margin-bottom: 50px;
+            h1{
+                text-align: center;
+                color: #9c5451;
+                font-family: "Playfair Display", serif;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 61px;
+                vertical-align: baseline;
+            }
+        }
+        .videoGallery-row{
+            .videoGallery-col{
+                padding: 20px;
+                .videogallery-card{
+                    border-radius: 20px;
+                    border-color: #999999;
+                    // border-top-left-radius: 20px;
+                    // border-top-right-radius: 20px;
+                    position: relative;
+                    a{
+                        img{
+                            width: 100%;
+                           height: auto;
+                           object-fit: cover;
+                           border-top-left-radius: 20px;
+                           border-top-right-radius: 20px;
+
+                        }
+                        span{
+                            color: #f2f2f2;
+                            font-size: 40px;
+                            position: absolute;
+                            top: 45%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                            transition: 0.4s;
+                            &:hover{
+                                color: #9c5451;
+                            }
+                        }
+                    }
+                    .card-body{
+                        p{
+                            color: #9c5451;
+                            font-size: 18px;
+                            text-align: center;
+                            font-family: "Playfair Display", serif;
+                            line-height: 32px;
+                            font-weight: 400;
+
+                        }
+                    }
+                }
+
+    
+            }
+    
+        }
+
+    }
+    
+}
