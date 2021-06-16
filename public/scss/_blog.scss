@@ -1,0 +1,75 @@
+.section-blog{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .blog-container{
+        .blog-header{
+            h1{
+                text-align: center;
+                margin-bottom: 50px;
+                color: #9c5451;
+                font-size: 35px;
+                line-height: 61px;
+                font-family: "Playfair Display", serif;
+                font-weight: 400;
+                vertical-align: baseline;
+            }
+        }
+        .blog-main{
+            .blog-row{
+               
+                .blog-col{
+                    position: relative;
+                    color: #ffffff;
+                    padding: 10px;
+                    border: 2px solid #222;
+                    transition: 0.8s;
+                    cursor: pointer;
+                    &:hover{
+                        -ms-transform: scale(0.9);
+                        -webkit-transform: scale(0.9);
+                        transform: scale(0.9); 
+                        border: 1px solid #999999;
+                        
+                    }
+
+                     img{
+                         width: 100%;
+                         height: auto;
+                         object-fit: cover;
+                              
+                     }
+                    
+                    
+                    .blog-text{
+                        margin-top: 15px;
+                        vertical-align: baseline;
+                           
+                        h2{
+                            
+                            font-size: 20px;
+                            line-height: 35px;
+                            font-weight: 400;
+                            font-family: "Playfair Display", serif;
+                            color: #9c5451;
+                            margin: 0;
+                            
+                        }
+                        p{
+                            
+                            font-size: 13px;
+                            color: #999999;
+                            line-height: 24.5px;
+                            font-family: 'Mukta', sans-serif;
+
+                        }
+                        
+                       
+                    }
+                   
+                     
+                }
+            }
+        }
+    }
+
+}

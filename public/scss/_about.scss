@@ -1,0 +1,191 @@
+.section-about{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    .section-about-container{
+        .about-row{
+            .about-col{
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border: 1px solid #999999;
+                   
+                }
+
+            }
+            .about-col2{
+                h2{
+                    color: #9b5451;
+                    font-family: "Playfair Display", serif;
+                    font-weight: 400;
+                    line-height: 44px;
+                    font-size: 25px;
+
+                }
+                p{
+                    font-family: 'Mukta', sans-serif;
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    
+
+                }
+                img{
+                    width: 150px;
+                    margin-bottom: 30px;
+
+                }
+                h6{
+                    margin: 0;
+                    padding: 0;
+                    font-family: 'Mukta', sans-serif;
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    span{
+                        color: #9b5451;
+                        font-weight: 400;
+                    }
+                }
+                
+
+            }
+        }
+    }
+}
+
+.section-about-part2{
+    margin: 85px 0;
+    
+    
+    .section-about-part2-container{
+        .section-about-part2-text{
+          margin: auto 34%;
+            
+            h1{
+            font-size: 25px;
+            color: #9c5451;
+            font-family: "Playfair Display", serif;
+            line-height: 44px;
+            font-weight: 400;
+            vertical-align: baseline;
+                
+            }
+
+        }
+        .section-about-part2-row{
+            margin-top: 25px;
+            
+            .section-about-part2-col{
+                .singleProfile{
+                    .singleProfile__image{
+                        position: relative;
+                        padding-left: 45px;
+                        background: #1e1e1e;
+                        p{
+                            font-size: 15px;
+                            line-height: 26px;
+                            font-family: 'Mukta', sans-serif;
+                            font-weight: 400;
+                            vertical-align: baseline;
+                            margin-bottom: 0;
+                            position: absolute;
+                            transform: rotate(-90deg);
+                            transform-origin: 0 0;
+                            left: 0;
+                            top: calc(100% - 15px);
+                            height: 45px;
+                            padding-top: 2px;
+                            span{
+                                color: #9c5451;
+                                font-size: 20px;
+                                line-height: 35px;
+                                font-family: "Playfair Display", serif;
+        
+                            }
+        
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+    
+                    }
+                    .singleProfile__social{
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+                        margin-top: 20px;
+                        li{
+                            list-style-type: none;
+                            display: inline-block;
+                            text-align: left;
+                            
+                            a{
+                                padding: 0 10px;
+                                color: #989898;
+                                transition: 0.4s;
+
+                                &:hover {     
+                                    color: #9c5451;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ************ Responsive *************
+
+@media only screen and (max-width: 992px){
+    
+    
+}
+
+@media only screen and (max-width: 768px){
+    .section-about-part2{
+        .section-about-part2-text{
+            h1{
+                text-align: center;
+                font-size: 20px !important;
+            }
+        }
+        .singleProfile{
+            ul{
+                margin-bottom: 50px !important;
+            }
+        }
+    }
+   
+}
+
+@media only screen and (max-width: 600px){
+    .section-about{
+        .about-col2{
+            #pera-2{
+                display: none !important;
+            }
+            
+        }
+    }
+    .section-about-part2{
+        .section-about-part2-text{
+            h1{
+                text-align: center;
+                font-size: 15px !important;
+            }
+        }
+        .singleProfile{
+            ul{
+                margin-bottom: 50px !important;
+            }
+        }
+
+    }
+    
+        
+    
+}

@@ -1,0 +1,109 @@
+.section-contact{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .contact-container{
+        .contact-header{
+            h1{
+                text-align: center;
+                margin-bottom: 50px;
+                color: #9c5451;
+                font-size: 35px;
+                line-height: 61px;
+                font-family: "Playfair Display", serif;
+                font-weight: 400;
+                vertical-align: baseline;
+
+            }
+        }
+        .contact-row{
+            .contact-col{
+                .contact-map{
+                    
+                }
+            }
+        }
+
+
+        .contact-details-row{
+            margin-top: 80px;
+            .contact-details-col{
+                .details-text{
+                    margin-bottom: 20px;
+                    vertical-align: baseline;
+                    h3{
+                        color: #9c5451;
+                        font-size: 20px;
+                        line-height: 35px;
+                        font-family: "Playfair Display", serif;
+                        font-weight: 400;
+
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-size: 400;
+
+                    }
+                }
+
+                .detail-head{
+                    h2{
+                        font-size: 20px;
+                        line-height: 35px;
+                        color: #9c5451;
+                        font-family: "Playfair Display", serif;
+                        font-weight: 400;
+
+                    }
+                }
+                .form-component{
+                    margin-top: 10px;
+                
+                    input{
+                        padding: 12px;
+                        width: 100%;
+                        border: none;
+                        background: #222;
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-weight: 400;
+                       
+
+                    }
+                    textarea{
+                        margin-top: 12px;
+                        margin-bottom: 5px;
+                        width: 100%;
+                        height: 166px;
+                        background: #222;
+                        border: none;
+                        padding: 10px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        font-weight: 400;
+
+                    }
+                }
+                button{
+                    padding: 10px 28px;
+                    border: none;
+                    font-family: 'Mukta',sans-serif;
+                    font-weight: 400;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    background: #9c5451;
+                    color: #f2f2f2;
+                    transition: 0.4s;
+                    &:hover{
+                        background: #222;
+                    }
+                    
+                }
+            }
+        }
+       
+       
+    }
+}

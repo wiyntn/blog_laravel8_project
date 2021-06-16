@@ -1,0 +1,49 @@
+@import "index";
+@import "about";
+@import "service";
+@import "photogallery";
+@import "videogallery";
+@import "project";
+@import "blog";
+@import "contact";
+
+.slicknav_menu {
+    display:none;
+    background: none;
+    // position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        display: none;
+       
+    }
+    .slicknav_nav {
+        position: absolute;
+        width: 200px;
+        background:#222;
+        top: 74px;
+        right: 11%;
+        z-index: 999;
+    }
+    .slicknav_menu {
+        display: block;
+        width: 150px;
+        float: right;
+        .slicknav_menutxt{
+            color: #999999;
+        }
+        i{
+            display: none;
+        }
+        a{
+            color:#999999;
+            &:hover{
+                color: #9c5451;
+            }
+        }
+    
+    }
+
+
+}

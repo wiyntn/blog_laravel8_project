@@ -1,0 +1,107 @@
+
+.section-photogallery{
+    margin-top: 70px;
+
+    .photogallery-container{
+
+        .header-photogallery{
+            margin-bottom: 30px;
+            h1{
+                text-align: center;
+                color: #9c5451;
+                font-family: "Playfair Display", serif;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 61px;
+                vertical-align: baseline;
+
+            }
+        }
+        .photogallery-row{
+            .photogallery-col{
+                margin: 12px 0;
+               
+                a{
+                    img{
+                        width: 100%;
+                        height: auto;
+                        vertical-align: middle;
+                        border: 1px solid #999999;
+                        
+                    }
+                   
+                }
+            }
+        }
+    }
+    .photogallery-more{
+        text-align: center;
+        margin: 80px 0;
+        
+
+        a{
+            text-decoration: none;
+            color: #cfc8c8;
+            font-size: 35px;
+            border: 2px solid #9b5451;
+            padding: 18px 26px;
+            border-radius: 50%;
+            transition: 0.3s;
+            &:hover{
+                background: #9c5451;
+            }
+                   
+         }
+        
+    }
+
+}
+
+// ********* Footer-Part ********* 
+
+footer{
+    margin: 50px 0;
+    .footer-container{
+        .footer-row{
+            .footer-col{
+               
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    
+                    li{
+                        list-style-type: none;
+                        display: inline-block;
+                        text-align: left;
+                        margin-right: 15px;
+                        a{
+                            padding: 0 5px;
+                            i{
+                                color: #9c5451;
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-col2{
+                
+    
+                text-align: right;
+                p{
+                    font-family: 'Mukta',sans-serif;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 23px;
+                    vertical-align: baseline;
+                    color: #999999;
+                    span{
+                        color: #9c5451;
+                          
+                    }
+                }
+            }
+        }
+    }
+   
+}
