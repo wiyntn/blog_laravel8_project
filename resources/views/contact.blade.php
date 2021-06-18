@@ -1,6 +1,6 @@
-@extends('master')
+@extends('master', ['menu'=> $menu])
 
-<!-- @section('title', $title) -->
+@section('title', $title)
 
 @section('main')
 

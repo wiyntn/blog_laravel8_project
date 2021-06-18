@@ -16,9 +16,9 @@ use App\Http\Controllers\FrontendController;
 
 Route::get('/', [FrontendController::class, 'home']);
 Route::get('/about', [FrontendController::class, 'about']);
-Route::get('/contact', [FrontendController::class, 'contact']);
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/services', [FrontendController::class, 'services']);
-Route::get('/blogs', [FrontendController::class, 'blogs']);
-Route::get('/projects', [FrontendController::class, 'projects']);
+Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
+Route::get('/projects', [FrontendController::class, 'projects'])->name('projects');
 Route::get('/video_gallery', [FrontendController::class, 'video_gallery']);
 Route::get('/photo_gallery', [FrontendController::class, 'photo_gallery']);

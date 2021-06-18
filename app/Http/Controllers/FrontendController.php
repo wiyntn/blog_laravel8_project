@@ -10,49 +10,57 @@ class FrontendController extends Controller{
     public function home(){
 
         $title="Home";
-        return view('home',compact('title'));
+        $menu="home";
+        return view('home',compact('title','menu'));
     }
 
     public function about(){
 
         $title="About";
-        return view('about',compact('title'));
+        $menu="about";
+        return view('about',compact('title','menu'));
     }
 
     public function contact(){
 
         $title="Contact";
-        return view('contact',compact('title'));
+        $menu="contact";
+        return view('contact',compact('title','menu'));
     }
 
     public function services(){
 
         $title="Services";
-        return view('services',compact('title'));
+        $menu="services";
+        return view('services',compact('title','menu'));
     }
 
     public function blogs(){
 
         $title="Blogs";
-        return view('blogs',compact('title'));
+        $menu="blogs";
+        return view('blogs',compact('title','menu'));
     }
 
     public function video_gallery(){
 
         $title="Video_Gallery";
-        return view('video_gallery',compact('title'));
+        $menu="video_gallery";
+        return view('video_gallery',compact('title','menu'));
     }
 
     public function photo_gallery(){
 
         $title="Photo_Gallery";
-        return view('photo_gallery',compact('title'));
+        $menu="photo_gallery";
+        return view('photo_gallery',compact('title','menu'));
     }
 
     public function projects(){
 
         $title="Projects";
-        return view('projects',compact('title'));
+        $menu="projects";
+        return view('projects',compact('title','menu'));
     }
 
 

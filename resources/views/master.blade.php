@@ -2,68 +2,17 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <link rel="stylesheet" href="vandors/slicknav/dist/slicknav.min.css">
-
-    <link rel="stylesheet" href="vandors/fancybox-master/dist/jquery.fancybox.css">
-    <link rel="stylesheet" href="vandors/fancybox-master/dist/jquery.fancybox.min.css">
-
-
-    <link rel="stylesheet" href="css/main.css">
+    @include('partial.head_tag')
 
     <title>@yield('title') | P O Z O</title>
+    @stack('style')
 </head>
     <body>
 
     @section('header')
-
-        <!-- *********** Nav-Menu ******* -->
-    <header>
-        <div class="container pozo-nav-container">
-            <div class="row pozo-nav-row">
-                <div class="col-12 pozo-nav-col">
-                    <nav class="nav-part">
-                        <a href=""><img src="img/logo.png" alt=""></a>
-                        <div class="nav-menu float-end ">
-                            <ul id="menu">
-                                <li class="nav-item"><a class="active" href="/">Home</a></li>
-                                <li class="nav-item"><a href="about">About</a></li>
-                                <li class="nav-item"><a href="services">Services</a></li>
-                                <li class="nav-item"><a href="photo_gallery">Gallery <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-part">
-                                        <li><a href="photo_gallery">Photo Gallery</a></li>
-                                        <li><a href="video_gallery">Video Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a href="projects">Projects</a></li>
-                                <li class="nav-item"><a href="blogs">Blogs</a></li>
-                                <li class="nav-item"><a href="contact">Contact</a></li>
-                            </ul>
-
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-    </header>
+        @include('partial.nav_var' , ["nav"=> $menu])
 
     @show
-
-
 
     @section('main')
 
@@ -74,25 +23,7 @@
 
     @section('footer')
 
-    <footer>
-        <div class="container footer-container">
-            <div class="row footer-row">
-                <div class="col-md-8 footer-col">
-                    <ul>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-behance"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 footer-col2">
-                    <p>© 2020 <span>POZO</span> All right reserved.</p>
-                </div>
-            </div>
-        </div>
-
-    </footer>
+        @include('partial.footer')
 
     @show
 

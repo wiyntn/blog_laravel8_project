@@ -1,10 +1,33 @@
-@extends('master')
+@extends('master', ['menu'=> $menu])
 
-<!-- @section('title', $title) -->
+@section('title', $title)
 
+@push('style')
+<style>
+    body{
+        background: rgb(107, 231, 225);
+    }
+    header .pozo-nav-container .pozo-nav-row {
+     background: rgb(82, 224, 217);
+}
+    header .pozo-nav-container .pozo-nav-row .pozo-nav-col .nav-part .nav-menu ul .nav-item a {
+    color: #999999;
+     border-bottom: 2px solid rgb(82, 224, 217);
+     }
+     header .pozo-nav-container .pozo-nav-row .pozo-nav-col .nav-part .nav-menu ul .nav-item .dropdown-part {
+ 
+     background: rgb(82, 224, 217);
+  
+    }
+    header .pozo-nav-container .pozo-nav-row .pozo-nav-col .nav-part .nav-menu ul .nav-item .dropdown-part li a:hover {
+     background: rgb(107, 231, 225);
+    }
+
+</style>
+@endpush
+    
 @section('main')
 
-   
     <!-- ****** ABOUT******** -->
 
     <section class="section-about">
