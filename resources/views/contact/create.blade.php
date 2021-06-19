@@ -37,7 +37,18 @@
                         <h2>Drop me a line!</h2>
                     </div>
 
-                    <form class="row" method="post">
+                    @if ($errors->any())
+                    <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{$error}}</li>
+                            @endforeach
+                    </ul>
+                    @endif
+                      
+
+                    <form action="{{route('contact.store')}}" method="POST" class="row" method="post">
+                        @csrf
+                        
                         <div class="col-sm-6">
                             <div class="form-component">
                                 <input type="text" placeholder="Full Name" required>

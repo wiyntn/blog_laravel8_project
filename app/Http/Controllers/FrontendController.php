@@ -21,12 +21,12 @@ class FrontendController extends Controller{
         return view('about',compact('title','menu'));
     }
 
-    public function contact(){
+    // public function contact(){
 
-        $title="Contact";
-        $menu="contact";
-        return view('contact',compact('title','menu'));
-    }
+    //     $title="Contact";
+    //     $menu="contact";
+    //     return view('contact',compact('title','menu'));
+    // }
 
     public function services(){
 

@@ -18,7 +18,7 @@
                             </li>
                             <li class="nav-item"><a class="{{($nav=='projects') ? 'active' : ''}}" href="{{route('projects')}}">Projects</a></li>
                             <li class="nav-item"><a class="{{($nav=='blogs') ? 'active' : ''}}" href="{{route('blogs')}}">Blogs</a></li>
-                            <li class="nav-item"><a class="{{($nav=='contact') ? 'active' : ''}}" href="{{route('contact')}}">Contact</a></li>
+                            <li class="nav-item"><a class="{{($nav=='contact') ? 'active' : ''}}" href="{{route('contact.index')}}">Contact</a></li>
                         </ul>
 
                     </div>
